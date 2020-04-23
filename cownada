@@ -1,0 +1,59 @@
+
+
+firstName = input("Enter first name ")
+lastName = input("Enter last name ")
+
+def lastFirst(firstName, lastName):
+    result = "Welcome, " + lastName + " " + firstName + "\n"
+    return "\n" + result.lower().upper()
+
+
+print (lastFirst(firstName, lastName))
+
+while True:
+    answer = input("The Moon and the Moo \nENTER GAME? (YES/NO)\n")
+
+    def lose():
+        print("You lost the game. Try again? (YES/NO)\n")
+
+    if answer.lower().strip() == "yes":
+        answer = input("Welcome to Cownada! Wanna buy a cow? (YES/NO)\n")
+        if answer.lower().strip() == "yes":
+
+            answer = input("Yummy! You bought a cow and ate it - but \n"
+                  "something feels off. Pop a pill to make the pain go away? (YES/NO)\n\n\n\n")
+            if answer.lower().strip() == "yes":
+                print("You overdose, and are eaten by the cows. \nGAME OVER \n\n\n\n")
+
+            else:
+                print ("Time heals all wounds, as well as cow poisoning - you survived. "
+                      "\nYou walk across the meadow and stumble upon a donkey. "
+                      "\nDo you want to keep it as a pet? (YES/NO)")
+            answer = input()
+            if answer.lower().strip() == "yes":
+                print("The donkey loves you! You win!")
+            else:
+                print("Unable to befriend the donkeys, you die 4 years later in the Donkey Revolution. "
+                      "\n GAME OVER. TRY AGAIN?\n\n\n\n")
+
+
+
+
+        else:
+            print("Starve asshole. \nGAME OVER. TRY AGAIN? \n\n\n\n")
+
+            answer = input()
+
+    else:
+        print("thats too bad, asshole.")
+        break
+
+
+
+
+
+
+
+
+
+
